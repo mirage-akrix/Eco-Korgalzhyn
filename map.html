@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Eco Korgalzhyn — Карта</title>
+
+				<style>
+					* {
+					box-sizing: border-box;
+					margin: 0;
+					padding: 0;
+					}
+
+					html {
+					scroll-behavior: smooth;
+					}
+
+					body {
+					font-family: Arial, sans-serif;
+					color: #263b2c;
+					background: #ffffff;
+					}
+
+					.header {
+					background-image:
+					linear-gradient(
+					rgba(255, 255, 255, 0.82),
+					rgba(255, 255, 255, 0.82)
+					),
+					url("https://skyway.travel/wp-content/uploads/2019/03/tyulpan_shrenka_foto_koshkinoy_mariny_alekseevny_o.6.webp");
+
+					background-size: cover;
+					background-position: center 65%;
+					background-repeat: no-repeat;
+
+					border-bottom: 1px solid #dce7d9;
+					position: sticky;
+					top: 0;
+					z-index: 100;
+					}
+
+					.container {
+					width: 90%;
+					max-width: 1200px;
+					margin: 0 auto;
+					}
+
+					.header-inner {
+					min-height: 80px;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					gap: 30px;
+					}
+
+					.logo {
+					color: #2f7045;
+					text-decoration: none;
+					font-size: 26px;
+					font-weight: 700;
+					}
+
+					.nav {
+					display: flex;
+					gap: 25px;
+					}
+
+					.nav a {
+					color: #314b38;
+					text-decoration: none;
+					font-size: 16px;
+					font-weight: 600;
+					}
+
+					.nav a:hover {
+					color: #4c9b64;
+					}
+
+					.map-page {
+					padding: 80px 0;
+					min-height: 80vh;
+					}
+
+					h1 {
+					font-size: 42px;
+					margin-bottom: 20px;
+					color: #294b34;
+					}
+
+					.description {
+					max-width: 700px;
+					color: #637266;
+					font-size: 18px;
+					line-height: 1.6;
+					margin-bottom: 40px;
+					}
+
+					.map-container {
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					}
+
+					.map-image {
+					display: block;
+					width: 100%;
+					max-width: 1100px;
+					height: auto;
+					border-radius: 18px;
+					box-shadow: 0 12px 35px rgba(34, 68, 44, 0.12);
+					}
+
+					.back {
+					margin-top: 40px;
+					}
+
+					.back a {
+					display: inline-block;
+					background: #4c9b64;
+					color: white;
+					text-decoration: none;
+					padding: 13px 22px;
+					border-radius: 10px;
+					font-weight: 600;
+					}
+
+					.footer {
+					background: #1f3025;
+					color: #dce8de;
+					padding: 35px 0;
+					text-align: center;
+					}
+
+					.footer p {
+					margin: 6px 0;
+					font-size: 14px;
+					}
+
+					@media (max-width: 800px) {
+					.header-inner {
+					flex-direction: column;
+					padding: 20px 0;
+					}
+
+					.nav {
+					flex-wrap: wrap;
+					justify-content: center;
+					}
+
+					h1 {
+					font-size: 32px;
+					}
+					}
+				</style>
+			</head>
+
+	<body>
+
+		<header class="header">
+			<div class="container header-inner">
+
+				<a href="index.html" class="logo">
+					Eco Korgalzhyn
+				</a>
+
+				<nav class="nav">
+					<a href="index.html#about">О проекте</a>
+					<a href="10 rules.html">10 правил</a>
+					<a href="eco-route.html">Eco-маршрут</a>
+					<a href="map.html">Карта</a>
+				</nav>
+
+			</div>
+		</header>
+
+		<main class="map-page">
+
+			<div class="container">
+
+				<h1>Карта Коргалжынского района</h1>
+
+				<p class="description">
+					Карта поможет ознакомиться с территорией Коргалжынского района
+					и его природными объектами.
+				</p>
+
+				<div class="map-container">
+					<img
+						src="eco.korgalzhyn.map.jpg"
+						alt="Карта Коргалжынского района"
+						class="map-image"
+            >
+					</div>
+
+				<div class="back">
+					<a href="index.html">← Вернуться на главную</a>
+				</div>
+
+			</div>
+
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<p>© 2026 Eco Korgalzhyn</p>
+				<p>Экологический проект о природе Коргалжынского района</p>
+			</div>
+		</footer>
+		
+	</body>
+</html>

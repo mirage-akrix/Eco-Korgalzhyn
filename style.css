@@ -1,0 +1,411 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #f4f8f1;
+color: #20352a;
+line-height: 1.6;
+}
+
+.container {
+width: 90%;
+max-width: 1150px;
+margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.82),
+        rgba(255, 255, 255, 0.82)
+    ),
+    url("https://skyway.travel/wp-content/uploads/2019/03/tyulpan_shrenka_foto_koshkinoy_mariny_alekseevny_o.6.webp");
+
+    background-size: cover;
+    background-position: center 69%;
+    background-repeat: no-repeat;
+
+    border-bottom: 1px solid #dce7d9;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header .container {
+min-height: 85px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.header h1 {
+font-size: 27px;
+color: #246b45;
+letter-spacing: 1px;
+}
+
+.navigation {
+display: flex;
+gap: 28px;
+}
+
+.navigation a {
+color: #30483a;
+text-decoration: none;
+font-size: 15px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.navigation a:hover {
+color: #3b9560;
+}
+
+/* HERO */
+
+.hero {
+min-height: 650px;
+background: linear-gradient(135deg, #e5f3df, #f7faf4);
+display: flex;
+align-items: center;
+}
+
+.hero-content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 60px;
+align-items: center;
+}
+
+.small-title,
+.section-label {
+color: #4b9361;
+font-size: 13px;
+font-weight: bold;
+letter-spacing: 3px;
+margin-bottom: 15px;
+}
+
+.hero h2 {
+font-size: 58px;
+line-height: 1.05;
+margin-bottom: 25px;
+color: #193c29;
+}
+
+.hero p {
+max-width: 550px;
+font-size: 18px;
+color: #506357;
+margin-bottom: 30px;
+}
+
+.main-button {
+display: inline-block;
+padding: 14px 25px;
+background: #2d7a4d;
+color: white;
+text-decoration: none;
+border-radius: 8px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.main-button:hover {
+background: #1f5c38;
+transform: translateY(-2px);
+}
+
+.hero-image {
+height: 420px;
+overflow: hidden;
+border-radius: 25px;
+box-shadow: 0 15px 40px rgba(37, 76, 48, 0.18);
+}
+
+.hero-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+/* ABOUT */
+
+.section {
+padding: 110px 0;
+background: white;
+}
+
+.section h2,
+.features h2 {
+font-size: 42px;
+margin-bottom: 35px;
+color: #193c29;
+}
+
+.text-card {
+    max-width: 900px;
+    padding: 35px;
+
+    background-image:
+        linear-gradient(
+            rgba(241, 247, 237, 0.88),
+            rgba(241, 247, 237, 0.88)
+        ),
+        url("https://welcome.kz/ru/assets/images/products/0_gallery/tours/astana-excursions/korgalzhyn/Flamingo.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-left: 5px solid #4c9b64;
+    border-radius: 12px;
+}
+
+.text-card p {
+font-size: 18px;
+color: #506357;
+margin-bottom: 18px;
+}
+
+.text-card p:last-child {
+margin-bottom: 0;
+}
+
+/* CARDS */
+
+.features {
+padding: 110px 0;
+background: #eaf4e5;
+}
+
+.cards {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+}
+
+.card {
+display: block;
+background: white;
+padding: 35px;
+min-height: 290px;
+border-radius: 16px;
+text-decoration: none;
+color: inherit;
+box-shadow: 0 8px 25px rgba(34, 68, 44, 0.07);
+transition: 0.3s;
+}
+
+.card:hover {
+transform: translateY(-8px);
+box-shadow: 0 18px 35px rgba(34, 68, 44, 0.13);
+}
+
+.card-number {
+color: #5aa16e;
+font-size: 15px;
+font-weight: bold;
+margin-bottom: 25px;
+}
+
+.card h3 {
+font-size: 27px;
+margin-bottom: 15px;
+color: #234b32;
+}
+
+.card p {
+color: #637266;
+margin-bottom: 25px;
+}
+
+.card span {
+color: #318050;
+font-weight: bold;
+}
+
+/* QUOTE */
+
+.quote-section {
+padding: 90px 0;
+background: #234b32;
+color: white;
+}
+
+.quote {
+max-width: 800px;
+margin: auto;
+text-align: center;
+}
+
+.quote span {
+font-size: 70px;
+line-height: 0;
+opacity: 0.6;
+}
+
+.quote p {
+font-size: 30px;
+font-weight: bold;
+line-height: 1.4;
+}
+
+/* FOOTER */
+
+footer {
+background: #172b20;
+color: white;
+padding: 35px 0;
+}
+
+footer p {
+font-size: 20px;
+font-weight: bold;
+}
+
+footer span {
+color: #a8b8ad;
+font-size: 14px;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+```
+.header .container {
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 15px;
+}
+
+.navigation {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.hero {
+    padding: 70px 0;
+}
+
+.hero-content {
+    grid-template-columns: 1fr;
+}
+
+.hero h2 {
+    font-size: 43px;
+}
+
+.hero-image {
+    height: 300px;
+}
+
+.cards {
+    grid-template-columns: 1fr;
+}
+
+.section h2,
+.features h2 {
+    font-size: 34px;
+}
+
+.quote p {
+    font-size: 23px;
+}
+```
+
+}
+
+
+/* 10 RULES PAGE */
+
+.rules-page {
+    padding: 90px 0;
+    background: #f0f6df;
+    min-height: 80vh;
+}
+
+.rules-description {
+    max-width: 650px;
+    color: #637266;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.rules-image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.rules-image {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(34, 68, 44, 0.12);
+}
+
+.back-container {
+    margin-top: 45px;
+}
+
+.point-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.point-text {
+    flex: 1;
+}
+
+.qr-box {
+    width: 170px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.qr-box img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 8px;
+
+    object-fit: contain;
+}
+
+.qr-box p {
+    font-size: 14px;
+    color: #68776b;
+    margin: 0;
+}
+
+
+
+/* Фон только карточки с QR-кодами */
+.video-card {
+    background-image:
+        linear-gradient(
+            rgba(241, 247, 237, 0.65),
+            rgba(241, 247, 237, 0.65)
+        ),
+        url("https://www.advantour.com/img/kazakhstan/nature/korgalzhyn5.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

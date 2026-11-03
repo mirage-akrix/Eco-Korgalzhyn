@@ -1,0 +1,495 @@
+﻿```html
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+				<title>Eco Korgalzhyn — День 1</title>
+
+				<style>
+					* {
+					box-sizing: border-box;
+					margin: 0;
+					padding: 0;
+					}
+
+					body {
+					font-family: Arial, sans-serif;
+					color: #263b2c;
+					background: #f4f8f1;
+					line-height: 1.6;
+					}
+
+					.header {
+					background-image:
+					linear-gradient(
+					rgba(255,255,255,0.82),
+					rgba(255,255,255,0.82)
+					),
+					url("https://skyway.travel/wp-content/uploads/2019/03/tyulpan_shrenka_foto_koshkinoy_mariny_alekseevny_o.6.webp");
+
+					background-size: cover;
+					background-position: center 65%;
+					background-repeat: no-repeat;
+
+					border-bottom: 1px solid #dce7d9;
+
+					position: sticky;
+					top: 0;
+					z-index: 100;
+					}
+
+					.container {
+					width: 90%;
+					max-width: 1100px;
+					margin: auto;
+					}
+
+					.header-inner {
+					min-height: 80px;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					gap: 30px;
+					}
+
+					.logo {
+					color: #2f7045;
+					text-decoration: none;
+					font-size: 26px;
+					font-weight: bold;
+					}
+
+					.nav {
+					display: flex;
+					gap: 25px;
+					flex-wrap: wrap;
+					}
+
+					.nav a {
+					color: #314b38;
+					text-decoration: none;
+					font-weight: 600;
+					}
+
+					.nav a:hover {
+					color: #4c9b64;
+					}
+
+					.route-page {
+					padding: 70px 0 90px;
+					}
+
+					.route-title {
+					text-align: center;
+					margin-bottom: 60px;
+					}
+
+					.route-title h1 {
+					font-size: 46px;
+					color: #294b34;
+					margin-bottom: 15px;
+					}
+
+					.route-title p {
+					color: #68776b;
+					font-size: 19px;
+					}
+
+					.route-point {
+					background: white;
+					border-radius: 20px;
+					padding: 35px;
+					margin-bottom: 60px;
+					box-shadow: 0 10px 30px rgba(34,68,44,0.09);
+					}
+
+					.route-point h2 {
+					font-size: 32px;
+					color: #2f7045;
+					margin-bottom: 25px;
+					}
+
+					.main-photo {
+					display: block;
+					width: 100%;
+					max-width: 850px;
+					max-height: 520px;
+					object-fit: cover;
+					margin: 0 auto 30px;
+					border-radius: 16px;
+					}
+
+					.route-point p {
+					color: #4e5f52;
+					font-size: 17px;
+					margin-bottom: 18px;
+					}
+
+					.facts {
+					background: #edf5e9;
+					border-left: 5px solid #4c9b64;
+					border-radius: 12px;
+					padding: 25px;
+					margin-top: 30px;
+					}
+
+					.facts h3 {
+					color: #315e3d;
+					margin-bottom: 15px;
+					}
+
+					.facts ul {
+					padding-left: 22px;
+					}
+
+					.facts li {
+					margin-bottom: 10px;
+					color: #506354;
+					}
+
+					/* QR-КОД */
+
+					.qr {
+					text-align: center;
+					margin-top: 35px;
+					padding-top: 25px;
+					border-top: 1px solid #dce7d9;
+					}
+
+					.qr img {
+					display: block;
+					width: 180px;
+					height: 180px;
+					object-fit: contain;
+					margin: 0 auto 10px;
+					}
+
+					.qr p {
+					color: #68776b;
+					font-size: 14px;
+					}
+
+					.return-box {
+					background: #dfeedd;
+					border-radius: 18px;
+					padding: 35px;
+					text-align: center;
+					}
+
+					.return-box h2 {
+					color: #315e3d;
+					margin-bottom: 12px;
+					}
+
+					.return-box p {
+					color: #526456;
+					font-size: 17px;
+					}
+
+					.back {
+					text-align: center;
+					margin-top: 50px;
+					}
+
+					.back a {
+					display: inline-block;
+					background: #2f7045;
+					color: white;
+					text-decoration: none;
+					padding: 13px 24px;
+					border-radius: 10px;
+					font-weight: 600;
+					}
+
+					.footer {
+					background: #1f3025;
+					color: #dce8de;
+					padding: 35px 0;
+					text-align: center;
+					margin-top: 80px;
+					}
+
+					.footer p {
+					margin: 6px 0;
+					font-size: 14px;
+					}
+
+					@media (max-width: 800px) {
+
+					.header-inner {
+					flex-direction: column;
+					padding: 18px 0;
+					}
+
+					.nav {
+					justify-content: center;
+					gap: 15px;
+					}
+
+					.route-title h1 {
+					font-size: 34px;
+					}
+
+					.route-point {
+					padding: 22px;
+					}
+
+					.route-point h2 {
+					font-size: 27px;
+					}
+
+					.route-point p {
+					font-size: 16px;
+					}
+
+					.main-photo {
+					max-height: 400px;
+					}
+
+					.qr img {
+					width: 160px;
+					height: 160px;
+					}
+					}
+				</style>
+			</head>
+
+	<body>
+
+		<header class="header">
+			<div class="container header-inner">
+
+				<a href="index.html" class="logo">
+					Eco Korgalzhyn
+				</a>
+
+				<nav class="nav">
+					<a href="index.html#about">О проекте</a>
+					<a href="10 rules.html">10 правил</a>
+					<a href="eco-route.html">Eco-маршрут</a>
+					<a href="map.html">Карта</a>
+				</nav>
+
+			</div>
+		</header>
+
+
+		<main class="route-page">
+
+			<div class="container">
+
+				<div class="route-title">
+					<h1>День 1</h1>
+
+					<p>
+						Стелла «Дударай» → Мавзолей Бытыгай
+					</p>
+				</div>
+
+
+				<!-- СТЕЛЛА ДУДАРАЙ -->
+
+				<section class="route-point">
+
+					<h2>1. Стелла «Дударай»</h2>
+
+					<img
+						class="main-photo"
+						src="https://tengrinews.kz/userdata/u395/2022-04/resize/ee4c631441ee9535b0cc94f51f00b0db.jpeg"
+						alt="Стелла Дударай"
+        >
+
+						<p>
+							Стелла «Дударай» посвящена истории любви Дуйсена
+							и Марии Рыкиной. Эта история стала основой известной
+							казахской песни «Дударай».
+						</p>
+
+						<p>
+							Мария Рыкина была русской девушкой, а Дуйсен —
+							казахским парнем. Их история стала символом любви,
+							дружбы и единства двух народов.
+						</p>
+
+						<div class="facts">
+
+							<h3>Интересные факты</h3>
+
+							<ul>
+
+								<li>
+									Стелла была установлена в 1980 году
+									на въезде в село Коргалжын.
+								</li>
+
+								<li>
+									Памятник изображает парня и девушку,
+									держащихся за руки.
+								</li>
+
+								<li>
+									Между ними проходит линия разлома в камне —
+									символ препятствий, которые существовали
+									между влюблёнными.
+								</li>
+
+								<li>
+									История «Дударай» связана не только с песней,
+									но и с реальными людьми — Марией Рыкиной и Дуйсеном.
+								</li>
+
+							</ul>
+
+						</div>
+
+
+						<!-- QR ДУДАРАЙ -->
+
+						<div class="qr">
+
+							<img
+								src="QR.dudarai.jpg"
+								alt="QR-код материалов о Дударай"
+            >
+
+								<p>
+									QR-код — дополнительные материалы о Дударай
+								</p>
+
+							</div>
+
+					</section>
+
+
+				<!-- МАВЗОЛЕЙ БЫТЫГАЙ -->
+
+				<section class="route-point">
+
+					<h2>2. Мавзолей Бытыгай</h2>
+
+					<img
+						class="main-photo"
+						src="https://archaeology.kz/static/heritages/8e296a067a37563370ded05f5a3bf3ec/3f55f187f843fb29c4ec8964c915ce99.jpg"
+						alt="Мавзолей Бытыгай"
+        >
+
+						<p>
+							Мавзолей Бытыгай — средневековый архитектурный
+							памятник, расположенный на левом берегу реки Нуры
+							недалеко от Коргалжына.
+						</p>
+
+						<p>
+							В официальных туристических источниках его относят
+							к XI–XII векам. Это портально-купольное сооружение
+							из жжёного кирпича.
+						</p>
+
+						<p>
+							Размер здания составлял примерно 10,67 × 8,53 м.
+						</p>
+
+						<p>
+							Во время археологических исследований рядом были
+							обнаружены следы мастерских и остатки печи
+							для обжига кирпича.
+						</p>
+
+
+						<div class="facts">
+
+							<h3>Интересные факты</h3>
+
+							<ul>
+
+								<li>
+									В 1862 году мавзолей зарисовал известный
+									казахский учёный и этнограф Шокан Уалиханов.
+								</li>
+
+								<li>
+									Мавзолей имеет несколько вариантов названия:
+									Бытыгай, Ботагай, Татагай.
+								</li>
+
+								<li>
+									Вокруг памятника обнаружены следы древнего
+									производства кирпича.
+								</li>
+
+								<li>
+									Объект официально относится к памятникам
+									истории и культуры республиканского значения.
+								</li>
+
+							</ul>
+
+						</div>
+
+
+						<!-- QR БЫТЫГАЙ -->
+
+						<div class="qr">
+
+							<img
+								src="QR.bytygai.jpg"
+								alt="QR-код материалов о Бытыгай"
+            >
+
+								<p>
+									QR-код — дополнительные материалы о Бытыгай
+								</p>
+
+							</div>
+
+					</section>
+
+
+				<!-- ВОЗВРАЩЕНИЕ -->
+
+				<div class="return-box">
+
+					<h2>Завершение первого дня</h2>
+
+					<p>
+						После посещения Стеллы «Дударай» и Мавзолея Бытыгай
+						туристы возвращаются в Коргалжынские центры отдыха,
+						где отдыхают и готовятся к следующему дню маршрута.
+					</p>
+
+				</div>
+
+
+				<div class="back">
+
+					<a href="eco-route.html">
+						← Вернуться к Eco-маршруту
+					</a>
+
+				</div>
+
+			</div>
+
+		</main>
+
+
+		<footer class="footer">
+
+			<div class="container">
+
+				<p>© 2026 Eco Korgalzhyn</p>
+
+				<p>
+					Экологический проект о природе Коргалжынского района
+				</p>
+
+			</div>
+
+		</footer>
+
+	</body>
+</html>
+```
